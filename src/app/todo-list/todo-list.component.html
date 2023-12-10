@@ -1,0 +1,3 @@
+<ng-container *ngFor="let card of todo; let i = index">
+    <app-todo-card [itemCard]="card" (removeItem)="remove($event)" (updateItem)="update($event)"></app-todo-card>
+</ng-container>
